@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: #050E26;
+    --blue: #178AF5;
+    --borderGray: #C3C7CF;
+    --backgroundGray: #F3F5FB;
+    --red: #ff0000;
+}
+
+body {
+    background-color: var(--backgroundGray);
+}
+
+.app-container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+
+.app-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.tasks-section-container {
+    background-color: var(--white);
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.task-input-container {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.task-input {
+    /* ca sa punem border pe un element trebuie sa setam: grosime, stilul si culoarea */
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--borderGray);
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.add-task-button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-color: var(--blue);
+    color: var(--white);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 16px;
+    padding-left: 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--blue);
+    transition-property: background-color, color;
+    transition-duration: 0.25s;
+}
+
+.add-task-button:hover {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.tasks-container {
+    list-style-type: none;
+}
+
+.tasks-container li {
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasks-container li img {
+    cursor: pointer;
+}
+
+.required-field {
+    color: var(--red);
+    display: none;
+}
