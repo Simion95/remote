@@ -94,7 +94,9 @@ body {
 
 .clear-tasks-button {
     position: absolute;
-    right: 0px;
+    width: 68.42px;
+    font-size: 10px;
+    right: 3px;
     top: 50px;
     cursor: pointer;
     background-color: var(--cyanrgba);
@@ -102,11 +104,13 @@ body {
     padding-bottom: 2px;
     padding-left: 7px;
     padding-right: 7px;
-    border: solid cyan 2px;
+    border: solid var(--cyan) 2px;
     border-radius: 5px;
     color: var(--blackrgba);
     display: none;
     margin-bottom: 200px;
+    transition-property: color;
+    transition-duration: 0.25s;
 }
 
 .clear-tasks-button:hover {
